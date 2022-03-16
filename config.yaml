@@ -1,0 +1,27 @@
+name: "web_app"
+version: "v1"
+mode: "dev"
+port: 8088
+
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "xlsf.xyz"
+  port: 3306
+  user: "root"
+  password: "xlsf0205"
+  dbname: "mysql_demo"
+  max_open_conns: 200
+  max_idle_conns: 50
+
+redis:
+  host: "xlsf.xyz"
+  port: 6379
+  db: 0
+  password: ""
+  pool_size: 100
